@@ -1,0 +1,29 @@
+/* Efectos para botones y animaciones */
+button {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+body {
+  background: linear-gradient(135deg, #fff1f2, #fffbea);
+  background-size: 400% 400%;
+  animation: subtleFlow 15s ease infinite;
+}
+@keyframes subtleFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+img {
+  transition: transform 0.4s ease-in-out;
+}
+h2, h3 {
+  background: linear-gradient(to right, #ec4899, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
